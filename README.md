@@ -1,2 +1,3 @@
-# techdegree-project-2
- My second Techdegree project.
+# Responsive-Layout-Site
+
+My second Techdegree project.
