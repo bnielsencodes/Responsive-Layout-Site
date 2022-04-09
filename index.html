@@ -26,7 +26,7 @@
       <header id="home">
         <div>
           <nav>
-            <ul>
+            <ul id="nav-list">
               <li class="name">
                 <h1>Brandon Nielsen</h1>
               </li>
@@ -44,7 +44,7 @@
             </ul>
           </nav>
         </div>
-        <div>
+        <div id="pic-and-introduction">
           <img
             id="profile-picture"
             src="images/responsive-layout-profile.png"
@@ -59,102 +59,105 @@
       </header>
       <main>
         <h2 id="portfolio-title">Portfolio</h2>
-        <article>
-          <figure class="projects">
-            <img
-              class="portfolio-images"
-              src="images/portfolio-1.png"
-              alt="screenshot of marketing page"
-            />
-            <figcaption>
-              <h3>Marketing Page</h3>
-              <p>
-                This project shows the front page of a marketing website meant
-                for a specific business I'm interested in.
-              </p>
-            </figcaption>
-          </figure>
-        </article>
-        <article>
-          <figure class="projects">
-            <img
-              class="portfolio-images"
-              src="images/portfolio-2.png"
-              alt="screenshot of search page"
-            />
-            <figcaption>
-              <h3>Search Page</h3>
-              <p>
-                This project searches through a specific database to find
-                information that the user is trying to look up.
-              </p>
-            </figcaption>
-          </figure>
-        </article>
-        <article>
-          <figure class="projects">
-            <figcaption>
+        <div id="projects-container">
+          <article class="projects">
+            <figure class="project-figures">
+              <img
+                class="portfolio-images"
+                src="images/portfolio-1.png"
+                alt="screenshot of marketing page"
+              />
+              <figcaption>
+                <h3>Marketing Page</h3>
+                <p>
+                  This project shows the front page of a marketing website meant
+                  for a specific business I'm interested in.
+                </p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="projects">
+            <figure class="project-figures">
+              <img
+                class="portfolio-images"
+                src="images/portfolio-2.png"
+                alt="screenshot of search page"
+              />
+              <figcaption>
+                <h3>Search Page</h3>
+                <p>
+                  This project searches through a specific database to find
+                  information that the user is trying to look up.
+                </p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="projects">
+            <figure class="project-figures">
               <img
                 class="portfolio-images"
                 src="images/portfolio-3.png"
                 alt="screenshot of travel app"
               />
-              <h3>Travel App</h3>
-              <p>
-                This project compares travel times based on different
-                transportation method and tells you the best one.
-              </p>
-            </figcaption>
-          </figure>
-        </article>
-        <article>
-          <figure class="projects">
-            <figcaption>
-              <img
-                class="portfolio-images"
-                src="images/portfolio-4.png"
-                alt="screenshot of map of favorite spots"
-              />
-              <h3>Favorite Spots</h3>
-              <p>
-                This project uses mapping API's to plot points for my favorite
-                spots in the city for a do-it-yourself walking tour.
-              </p>
-            </figcaption>
-          </figure>
-        </article>
-        <article>
-          <figure class="projects">
-            <figcaption>
-              <img
-                class="portfolio-images"
-                src="images/portfolio-5.png"
-                alt="screenshot of photo gallery"
-              />
-              <h3>Photo Gallery</h3>
-              <p>
-                This projects shows pictures from a recent trip to the viewer
-                and allows them to easily navigate through photos.
-              </p>
-            </figcaption>
-          </figure>
-        </article>
-        <article>
-          <figure class="projects">
-            <figcaption>
-              <img
-                class="portfolio-images"
-                src="images/portfolio-6.png"
-                alt="screenshot of calculator"
-              />
-              <h3>Calculator</h3>
-              <p>
-                Someone can enter in the numbers they want, and press the big
-                blue button and get results.
-              </p>
-            </figcaption>
-          </figure>
-        </article>
+              <figcaption>
+                <h3>Travel App</h3>
+                <p>
+                  This project compares travel times based on different
+                  transportation method and tells you the best one.
+                </p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="projects">
+            <figure class="project-figures">
+              <figcaption>
+                <img
+                  class="portfolio-images"
+                  src="images/portfolio-4.png"
+                  alt="screenshot of map of favorite spots"
+                />
+                <h3>Favorite Spots</h3>
+                <p>
+                  This project uses mapping API's to plot points for my favorite
+                  spots in the city for a do-it-yourself walking tour.
+                </p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="projects">
+            <figure class="project-figures">
+              <figcaption>
+                <img
+                  class="portfolio-images"
+                  src="images/portfolio-5.png"
+                  alt="screenshot of photo gallery"
+                />
+                <h3>Photo Gallery</h3>
+                <p>
+                  This projects shows pictures from a recent trip to the viewer
+                  and allows them to easily navigate through photos.
+                </p>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="projects">
+            <figure class="project-figures">
+              <figcaption>
+                <img
+                  class="portfolio-images"
+                  src="images/portfolio-6.png"
+                  alt="screenshot of calculator"
+                />
+                <h3>Calculator</h3>
+                <p>
+                  Someone can enter in the numbers they want, and press the big
+                  blue button and get results.
+                </p>
+              </figcaption>
+            </figure>
+          </article>
+        </div>
+
         <section id="contact">
           <div id="contact-container">
             <h4 id="contact-title">CONTACT</h4>
@@ -183,6 +186,15 @@
       <ul id="footer-list">
         <li id="footer-name">Brandon Nielsen</li>
         <li><a id="back-to-top" href="#home">BACK TO TOP</a></li>
+        <li class="nav-link-items-bottom">
+          <a href="#home"><strong>Home</strong></a>
+        </li>
+        <li class="nav-link-items-bottom" id="nav-link-item-2">
+          <a href="#portfolio"><strong>Portfolio</strong></a>
+        </li>
+        <li class="nav-link-items-bottom">
+          <a href="#contact"><strong>Contact</strong></a>
+        </li>
       </ul>
     </footer>
   </body>

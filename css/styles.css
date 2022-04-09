@@ -88,7 +88,7 @@ main {
   padding: 40px 0 40px;
 }
 
-.projects {
+.project-figures {
   margin: 0px;
 }
 
@@ -123,31 +123,34 @@ figcaption p {
   padding: 1px 0px 20px;
 }
 
-/* #phone-email-container {
-  padding: 0px 40px;
-} */
-
-#phone,
-#email {
+#phone-email-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #phone {
-  padding: 0px 115px;
+  padding: 0px 12px 0px 0px;
 }
 
 #email {
-  padding: 5px 97px 60px;
+  padding: 5px 12px 60px 0px;
   margin-bottom: 0px;
 }
+
+span {
+  padding-left: 12px;
+}
+
+/* 115
+97 */
 
 footer {
   background-color: #0399ff;
 }
 
 #footer-list {
-  margin: 0px 20px;
+  margin: 0px 25px;
   padding: 25px 0px;
   display: flex;
   justify-content: space-between;
@@ -168,13 +171,147 @@ footer {
 Media Queries
 =========================================== */
 
+@media only screen and (max-width: 767px) {
+  .nav-link-items-bottom {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 768px) {
+  li.name {
+    padding-top: 45px;
+  }
+  #nav-links-container {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px 170px;
+    height: 65px;
+  }
+  .nav-link-items {
+    background-color: #0399ff;
+    margin: 0px;
+  }
+  #nav-link-item-2 {
+    padding: 0px 25px;
+    margin: 0px;
+  }
+  .nav-link-items-bottom a:hover {
+    color: #fff;
+  }
+  .nav-link-items a:hover {
+    color: #fff;
+  }
+  #pic-and-introduction {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 30px 70px;
+  }
+  #profile-picture {
+    padding: 30px 0px 0px;
+  }
+  #introduction {
+    order: -1;
+    margin: 0px;
+    padding: 30px 40px 0px 0px;
+    text-align: start;
+    font-size: 1.5rem;
+  }
+  #projects-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .projects {
+    flex: 1 47%;
+    margin: 0px 10px;
+  }
+  figcaption p {
+    padding: 0px 50px;
+  }
+  #contact-container {
+    padding-bottom: 60px;
+  }
+  #contact-paragraph {
+    padding: 0px 120px;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  #phone-email-container {
+    padding-top: 20px;
+  }
   #back-to-top {
     display: none;
   }
 }
 
 @media only screen and (min-width: 1024px) {
+  body {
+    background-color: #0399ff;
+  }
+  .container {
+    margin: 0 40px;
+  }
+  header {
+    background-color: #0399ff;
+    margin: -25px -30px 1px;
+    padding: 1px 1px 1px;
+  }
+  #nav-links-container {
+    padding: 0px;
+  }
+  #nav-link-item-2 {
+    padding: 0px 35px;
+  }
+  li.name {
+    padding-top: 0px;
+  }
+  #pic-and-introduction {
+    padding: 0px 70px 70px;
+  }
+  main {
+    padding: 1px 30px 0px;
+  }
+  .projects {
+    flex: 1 31%;
+    margin: 0px 10px;
+  }
+  figcaption {
+    padding: 10px 0px 30px;
+  }
+  figcaption p {
+    padding: 0px 20px;
+  }
+
+  #contact {
+    margin: 0px -30px;
+  }
+  #contact-title {
+    font-size: 1.1rem;
+  }
+  #contact-paragraph {
+    padding: 0px 320px;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  #phone-email-container {
+    font-size: 1.2rem;
+  }
+  #footer-list {
+    margin: 0px 65px;
+  }
+
+  #nav-list {
+    margin: 40px 69px 0px;
+    padding: 25px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+  }
+
+  .name {
+    display: block;
+    margin-right: auto;
+  }
   #back-to-top {
     display: none;
   }
