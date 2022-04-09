@@ -1,0 +1,101 @@
+/* ========================================
+Base Styles
+=========================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #222;
+  text-align: center;
+}
+
+/* ========================================
+Link Styles
+=========================================== */
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+a:hover {
+  color: #0399ff;
+}
+
+/* ========================================
+Base Styles
+=========================================== */
+
+header {
+  background-color: #0399ff;
+  margin: -25px -25px 1px;
+  padding: 1px 1px 1px;
+}
+
+li.name {
+  padding-top: 1px;
+}
+
+#nav-links-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+  height: 200px;
+}
+
+.nav-link-items {
+  background-color: #ededed;
+  border-radius: 5px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+#nav-link-item-2 {
+  margin: 10px 0;
+}
+
+#profile-picture {
+  padding-top: 45px;
+}
+
+#introduction {
+  font-size: 1.2rem;
+  font-weight: 100;
+  padding: 10px 27px 25px;
+}
+
+main {
+  background-color: #ffffff;
+  padding-top: 1px;
+  margin-top: 1px;
+}
+
+.container {
+  direction: flex;
+  margin: 0 25px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+/* ========================================
+Media Queries
+=========================================== */
+
+@media only screen and (min-width: 768px) {
+  #back-to-top {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #back-to-top {
+    display: none;
+  }
+}
