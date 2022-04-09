@@ -3,44 +3,132 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css.css/styles.css" />
+    <link rel="stylesheet" href="css.css/normalize.css" />
     <title>Responsive Layout Site</title>
   </head>
   <body>
-    <header id="header">
+    <header id="home">
       <div>
         <nav>
           <ul>
-            <li class="name"></li>
-            <li href="#header"></li>
-            <li href="#portfolio"></li>
-            <li href="#contect"></li>
+            <li class="name">Brandon Nielsen</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
-      <div></div>
+      <div>
+        <img src="images/responsive-layout-profile.png" alt="" />
+        <p>
+          Hi, I'm Brandon Nielsen. I’m an aspiring self-taught front-end web
+          developer with a passion for learning. I’m excited to bring my life
+          experience to the process of building fantastic looking websites.
+        </p>
+      </div>
     </header>
     <main id="portfolio">
-      <div>
-        <img src="" alt="" />
-      </div>
-      <div>
-        <img src="" alt="" />
-      </div>
-      <div>
-        <img src="" alt="" />
-      </div>
-      <div>
-        <img src="" alt="" />
-      </div>
-      <div>
-        <img src="" alt="" />
-      </div>
-      <div>
-        <img src="" alt="" />
-      </div>
-      <div id="contact"></div>
+      <h2>Portfolio</h2>
+      <article>
+        <figure>
+          <img
+            src="images/portfolio-1.png"
+            alt="screenshot of marketing page"
+          />
+          <figcaption>
+            <h3></h3>
+            <p>
+              This project shows the front page of a marketing website meant for
+              a specific business I'm interested in.
+            </p>
+          </figcaption>
+        </figure>
+      </article>
+      <article>
+        <figure>
+          <img src="images/portfolio-2.png" alt="screenshot of search page" />
+          <figcaption>
+            <h3>Search Page</h3>
+            <p>
+              This project searches through a specific database to find
+              information that the user is trying to look up.
+            </p>
+          </figcaption>
+        </figure>
+      </article>
+      <article>
+        <figure>
+          <figcaption>
+            <img src="images/portfolio-3.png" alt="screenshot of travel app" />
+            <h3>Travel App</h3>
+            <p>
+              This project compares travel times based on different
+              transportation method and tells you the best one.
+            </p>
+          </figcaption>
+        </figure>
+      </article>
+      <article>
+        <figure>
+          <figcaption>
+            <img
+              src="images/portfolio-4.png"
+              alt="screenshot of map of favorite spots"
+            />
+            <h3>Favorite Spots</h3>
+            <p>
+              This project uses mapping API's to plot points for my favorite
+              spots in the city for a do-it-yourself walking tour.
+            </p>
+          </figcaption>
+        </figure>
+      </article>
+      <article>
+        <figure>
+          <figcaption>
+            <img
+              src="images/portfolio-5.png"
+              alt="screenshot of photo gallery"
+            />
+            <h3>Photo Gallery</h3>
+            <p>
+              This projects shows pictures from a recent trip to the viewer and
+              allows them to easily navigate through photos.
+            </p>
+          </figcaption>
+        </figure>
+      </article>
+      <article>
+        <figure>
+          <figcaption>
+            <img src="images/portfolio-6.png" alt="screenshot of calculator" />
+            <h3>Calculator</h3>
+            <p>
+              Someone can enter in the numbers they want, and press the big blue
+              button and get results.
+            </p>
+          </figcaption>
+        </figure>
+      </article>
+      <section id="contact">
+        <h4>Contact</h4>
+        <p>
+          Feel free to reach out to me if you think I could contribute to your
+          project, complement your team, or if you would just like to chat. I'd
+          love to hear from you!
+        </p>
+        <p>Phone <span>+1 (111)555-1234</span></p>
+        <p>
+          Email <a href=""><span>cuedashb@gmail.com</span></a>
+        </p>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <ul>
+        <li>Brandon Nielsen</li>
+        <li id="back-to-top"><a href="#home">BACK TO TOP</a></li>
+      </ul>
+    </footer>
   </body>
 </html>

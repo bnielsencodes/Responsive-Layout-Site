@@ -1,9 +1,19 @@
+body {
+  background-color: aquamarine;
+}
+
 /* ========================================
 Media Queries
 =========================================== */
 
 @media only screen and (min-width: 768px) {
+  #back-to-top {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
+  #back-to-top {
+    display: none;
+  }
 }
