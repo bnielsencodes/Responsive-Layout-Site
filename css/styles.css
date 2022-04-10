@@ -11,6 +11,10 @@ body {
   text-align: center;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 /* ========================================
 Link Styles
 =========================================== */
@@ -65,13 +69,13 @@ Base Styles
 =========================================== */
 
 .container {
-  direction: flex;
   margin: 0 25px;
 }
 
 header {
   background-color: #0399ff;
-  margin: -25px -25px 1px;
+  width: 100vw;
+  margin: -25px 0px 1px;
   padding: 1px 1px 1px;
 }
 
@@ -92,11 +96,11 @@ header {
   font-size: 1.25rem;
 }
 
-#nav-link-item-2 {
+.nav-link-item-2 {
   margin: 10px 0 5px;
 }
 
-#nav-link-item-3 {
+.nav-link-item-3 {
   margin: 5px 0 10px;
 }
 
@@ -226,11 +230,11 @@ Media Queries
     background-color: #0399ff;
     margin: 0px;
   }
-  #nav-link-item-2 {
+  .nav-link-item-2 {
     padding: 0px 12.5px 0px 25px;
     margin: 0px;
   }
-  #nav-link-item-3 {
+  .nav-link-item-3 {
     padding: 0px 25px 0px 12.5px;
     margin: 0px;
   }
@@ -251,6 +255,7 @@ Media Queries
   }
   #profile-picture {
     padding: 30px 0px 0px;
+    width: 100%;
   }
   #introduction {
     order: -1;
@@ -324,14 +329,17 @@ Media Queries
   #nav-links-container {
     padding: 0px;
   }
-  #nav-link-item-2 {
+  .nav-link-item-2 {
     padding: 0px 17.5px 0px 35px;
   }
-  #nav-link-item-3 {
+  .nav-link-item-3 {
     padding: 0px 35px 0px 17.5px;
   }
   li.name {
     padding-top: 0px;
+  }
+  #profile-picture {
+    width: 100%;
   }
   #pic-and-introduction {
     padding: 0px 70px 70px;
