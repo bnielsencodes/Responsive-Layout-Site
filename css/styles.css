@@ -93,7 +93,11 @@ header {
 }
 
 #nav-link-item-2 {
-  margin: 10px 0;
+  margin: 10px 0 5px;
+}
+
+#nav-link-item-3 {
+  margin: 5px 0 10px;
 }
 
 li.name {
@@ -223,9 +227,14 @@ Media Queries
     margin: 0px;
   }
   #nav-link-item-2 {
-    padding: 0px 25px;
+    padding: 0px 12.5px 0px 25px;
     margin: 0px;
   }
+  #nav-link-item-3 {
+    padding: 0px 25px 0px 12.5px;
+    margin: 0px;
+  }
+
   .nav-link-items-bottom a:hover {
     color: #fff;
   }
@@ -316,7 +325,10 @@ Media Queries
     padding: 0px;
   }
   #nav-link-item-2 {
-    padding: 0px 35px;
+    padding: 0px 17.5px 0px 35px;
+  }
+  #nav-link-item-3 {
+    padding: 0px 35px 0px 17.5px;
   }
   li.name {
     padding-top: 0px;
