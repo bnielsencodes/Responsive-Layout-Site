@@ -24,6 +24,48 @@ a:hover {
 }
 
 /* ========================================
+List Styles
+=========================================== */
+
+#nav-list,
+#footer-list {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+#skills-list-container {
+  padding: 1px;
+}
+
+#skills-list {
+  list-style-type: none;
+  color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  height: 40px;
+  padding: 1px 40px 1px 40px;
+}
+
+.skills-list-items {
+  width: 40px;
+  height: 30px;
+  display: flex;
+}
+
+/* .skills-list-items a {
+  width: 30px;
+  height: 30px;
+} */
+
+.skills-list-items i {
+  width: 40px;
+  height: 30px;
+  font-size: 30px;
+}
+
+/* ========================================
 Base Styles
 =========================================== */
 
@@ -57,11 +99,6 @@ header {
 
 #nav-link-item-2 {
   margin: 10px 0;
-}
-
-ul {
-  list-style-type: none;
-  padding-left: 0px;
 }
 
 li.name {
@@ -142,9 +179,6 @@ figcaption p {
 span {
   padding-left: 12px;
 }
-
-/* 115
-97 */
 
 footer {
   background-color: #0399ff;
