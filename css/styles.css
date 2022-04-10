@@ -34,7 +34,7 @@ List Styles
 }
 
 #skills-list-container {
-  padding: 1px;
+  padding: 1px 0px 50px;
 }
 
 #skills-list {
@@ -53,11 +53,6 @@ List Styles
   height: 30px;
   display: flex;
 }
-
-/* .skills-list-items a {
-  width: 30px;
-  height: 30px;
-} */
 
 .skills-list-items i {
   width: 40px;
@@ -108,6 +103,7 @@ li.name {
 
 #profile-picture {
   padding-top: 45px;
+  width: 300px;
 }
 
 #introduction {
@@ -236,6 +232,9 @@ Media Queries
   .nav-link-items a:hover {
     color: #fff;
   }
+  header {
+    height: calc(100vh + 25px);
+  }
   #pic-and-introduction {
     display: flex;
     flex-direction: row;
@@ -250,6 +249,29 @@ Media Queries
     padding: 30px 40px 0px 0px;
     text-align: start;
     font-size: 1.5rem;
+  }
+  #skills-list-title {
+    font-size: 1.3rem;
+  }
+  #skills-list {
+    list-style-type: none;
+    color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    height: 40px;
+    padding: 1px 60px 1px 60px;
+    margin-top: 40px;
+  }
+  .skills-list-items {
+    width: 50px;
+    height: 40px;
+  }
+  .skills-list-items i {
+    width: 50px;
+    height: 40px;
+    font-size: 40px;
   }
   #projects-container {
     display: flex;
@@ -288,7 +310,7 @@ Media Queries
   header {
     background-color: #0399ff;
     margin: -25px -30px 1px;
-    padding: 1px 1px 1px;
+    height: calc(100vh + 25px);
   }
   #nav-links-container {
     padding: 0px;
@@ -301,6 +323,29 @@ Media Queries
   }
   #pic-and-introduction {
     padding: 0px 70px 70px;
+  }
+  #skills-list-title {
+    font-size: 1.5rem;
+  }
+  #skills-list {
+    list-style-type: none;
+    color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    height: 50px;
+    padding: 1px 130px 1px 130px;
+    margin-top: 55px;
+  }
+  .skills-list-items {
+    width: 50px;
+    height: 50px;
+  }
+  .skills-list-items i {
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
   }
   main {
     padding: 1px 30px 0px;
